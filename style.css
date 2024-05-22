@@ -15,6 +15,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* ## Colors */
@@ -23,11 +27,11 @@
   /*! ### Theme 1 Backgrounds */
 
   /* (main background) */
-  --Very-dark-desaturated-blue: hsl(222, 26%, 31%);
+  --Very-dark-desaturated-blue-body: hsl(222, 26%, 31%);
   /* (toggle background, keypad background) */
-  --Very-dark-desaturated-blue: hsl(223, 31%, 20%);
+  --Very-dark-desaturated-blue-keypad: hsl(223, 31%, 20%);
   /* (screen background) */
-  --Very-dark-desaturated-blue: hsl(224, 36%, 15%);
+  --Very-dark-desaturated-blue-output: hsl(224, 36%, 15%);
 
   /* #### Keys */
 
@@ -109,9 +113,21 @@
   --Font-size: 2rem;
 }
 
+body {
+  background-color: var(--Very-dark-desaturated-blue-body);
+}
+
 .wrapper {
   padding: 1.2rem;
   max-width: fit-content;
+}
+
+.font-regular {
+  font-size: 1.5rem;
+}
+
+.font-small {
+  font-size: 0.75rem;
 }
 
 header {
@@ -121,24 +137,31 @@ header {
   gap: 0.75rem;
 }
 
+header span {
+  color: var(--White);
+}
+
 .output {
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
   justify-items: end;
-  height: 5rem;
+  height: 4.5rem;
   padding: 1rem;
   border-radius: 0.35rem;
   font-size: var(--Font-size);
   margin: 0.75rem 0;
+  background-color: var(--Very-dark-desaturated-blue-output);
+  color: var(--White);
 }
-
 
 main {
   display: grid;
   gap: 0.75rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 1rem;
+  background-color: var(--Very-dark-desaturated-blue-keypad);
+  border-radius: 0.35rem;
 }
 
 button {
@@ -147,6 +170,7 @@ button {
   outline: none;
   border-radius: 0.35rem;
   border: none;
+  color: var(--Very-dark-grayish-blue);
 }
 
 .reset {
@@ -155,4 +179,40 @@ button {
 
 .submit {
   grid-column: 3/5;
+}
+
+/* theme1 stylings */
+
+.body-background {
+  background-color: var(--Very-dark-desaturated-blue-body);
+}
+
+.output-background {
+  background-color: var(--Very-dark-desaturated-blue-output);
+}
+
+.keypad-background {
+  background-color: var(--Very-dark-desaturated-blue-keypad);
+}
+
+.text-white {
+  color: var(--White);
+}
+.test-darkBlue {
+  color: var(--Very-dark-grayish-blue);
+}
+
+.del,
+.submit,
+.reset {
+  color: var(--White);
+}
+
+.del,
+.reset {
+  background-color: var(--Desaturated-dark-blue);
+}
+
+.submit {
+  background-color: var(--Dark-red);
 }
