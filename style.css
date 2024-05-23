@@ -144,8 +144,8 @@ header span {
 .output {
   display: grid;
   grid-template-columns: 1fr;
-  align-content: center;
-  justify-items: end;
+  /* align-content: center;
+  justify-items: start; */
   height: 4.5rem;
   padding: 1rem;
   border-radius: 0.35rem;
@@ -153,6 +153,9 @@ header span {
   margin: 0.75rem 0;
   background-color: var(--Very-dark-desaturated-blue-output);
   color: var(--White);
+  border: none;
+  outline: none;
+  text-align: right;
 }
 
 main {
