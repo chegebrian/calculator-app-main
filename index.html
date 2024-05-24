@@ -31,11 +31,19 @@
     <div class="wrapper">
       <header>
         <span class="font-regular">calc</span>
-        <span class="font-small">THEME</span>
+        <form>
+          <span class="font-small">THEME</span>
+
+          <label for="dark-blue" class="visually-hidden">dark-blue</label>
+          <input type="radio" name="theme" id="dark-blue" checked/>
+          <label for="light-gray" class="visually-hidden">light-gray</label>
+          <input type="radio" name="theme" id="light-gray" />
+          <label for="dark-violet" class="visually-hidden">dark-violet</label>
+          <input type="radio" name="theme" id="dark-violet" />
+        </form>
       </header>
 
-      <input class="output" readonly>
-
+      <input class="output" readonly />
 
       <main>
         <button class="seven" value="7">7</button>
