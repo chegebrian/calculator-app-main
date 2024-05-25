@@ -31,11 +31,15 @@
 
 body {
   background-color: var(--bg-body);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .wrapper {
   padding: 1.2rem;
   width: fit-content;
+  margin: 0 auto;
 }
 
 .font-regular {
@@ -74,6 +78,8 @@ form {
   gap: 2rem;
   padding: 0.5rem 0.1rem;
   border-radius: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
 }
 
 form input[type="radio"] {
@@ -95,6 +101,10 @@ form input[type="radio"]#light-gray {
 }
 form input[type="radio"]#dark-violet {
   --radio-color: hsl(268, 75%, 9%);
+}
+
+form span{
+  color: black;
 }
 
 .output {
