@@ -35,7 +35,7 @@ body {
 
 .wrapper {
   padding: 1.2rem;
-  max-width: fit-content;
+  width: fit-content;
 }
 
 .font-regular {
@@ -89,10 +89,8 @@ form input[type="radio"]:checked {
 }
 form input[type="radio"]#dark-blue {
   --radio-color: hsl(222, 26%, 31%);
-  
 }
 form input[type="radio"]#light-gray {
-  
   --radio-color: hsl(0, 0%, 90%);
 }
 form input[type="radio"]#dark-violet {
@@ -216,57 +214,56 @@ button:active {
   background: none;
 }
 
-
 /* theme 1 */
 .dark-blue,
 :root:has(#dark-blue:checked) {
-    --bg-body: hsl(222, 26%, 31%);
-    --bg-keypad: hsl(223, 31%, 20%);
-    --bg-output: hsl(224, 36%, 15%);
-    --bg-clear-btn: hsl(225, 21%, 49%);
-    --bg-clear-after-btn: hsl(224, 28%, 35%);
-    --bg-submit-btn: hsl(6, 63%, 50%);
-    --bg-submit-after-btn: hsl(6, 70%, 34%);
-    --bg-after-btn: hsl(30, 25%, 89%);
-    --bg-btn: hsl(28, 16%, 65%);
-    --btn-color: hsl(221, 14%, 31%);
-    --text-color: hsl(0, 0%, 100%);
-    --output-color: hsl(0, 0%, 100%);
-    --span-color:var(--text-color)
+  --bg-body: hsl(222, 26%, 31%);
+  --bg-keypad: hsl(223, 31%, 20%);
+  --bg-output: hsl(224, 36%, 15%);
+  --bg-clear-btn: hsl(225, 21%, 49%);
+  --bg-clear-after-btn: hsl(224, 28%, 35%);
+  --bg-submit-btn: hsl(6, 63%, 50%);
+  --bg-submit-after-btn: hsl(6, 70%, 34%);
+  --bg-after-btn: hsl(30, 25%, 89%);
+  --bg-btn: hsl(28, 16%, 65%);
+  --btn-color: hsl(221, 14%, 31%);
+  --text-color: hsl(0, 0%, 100%);
+  --output-color: hsl(0, 0%, 100%);
+  --span-color: var(--text-color);
 }
 
 /* theme 2 */
 .light-gray,
 :root:has(#light-gray:checked) {
-    --bg-body: hsl(0, 0%, 90%);
-    --bg-keypad: hsl(0, 5%, 81%);
-    --bg-output: hsl(0, 0%, 93%);
-    --bg-clear-btn: hsl(185, 42%, 37%);
-    --bg-clear-after-btn: hsl(185, 58%, 25%);
-    --bg-submit-btn: hsl(25, 98%, 40%);
-    --bg-submit-after-btn: hsl(25, 99%, 27%);
-    --bg-after-btn: hsl(45, 7%, 89%);
-    --bg-btn: hsl(35, 11%, 61%);
-    --btn-color: hsl(60, 10%, 19%);
-    --text-color: hsl(0, 0%, 100%);
-    --output-color: var(--btn-color);
-    --span-color: var(--btn-color)
+  --bg-body: hsl(0, 0%, 90%);
+  --bg-keypad: hsl(0, 5%, 81%);
+  --bg-output: hsl(0, 0%, 93%);
+  --bg-clear-btn: hsl(185, 42%, 37%);
+  --bg-clear-after-btn: hsl(185, 58%, 25%);
+  --bg-submit-btn: hsl(25, 98%, 40%);
+  --bg-submit-after-btn: hsl(25, 99%, 27%);
+  --bg-after-btn: hsl(45, 7%, 89%);
+  --bg-btn: hsl(35, 11%, 61%);
+  --btn-color: hsl(60, 10%, 19%);
+  --text-color: hsl(0, 0%, 100%);
+  --output-color: var(--btn-color);
+  --span-color: var(--btn-color);
 }
 
 /* theme 3 */
 .dark-violet,
 :root:has(#dark-violet:checked) {
-    --bg-body: hsl(268, 75%, 9%);
-    --bg-keypad: hsl(268, 71%, 12%);
-    --bg-output: hsl(268, 71%, 12%);
-    --bg-clear-btn: hsl(281, 89%, 26%);
-    --bg-clear-after-btn: hsl(285, 91%, 52%);
-    --bg-submit-btn: hsl(176, 100%, 44%);
-    --bg-submit-after-btn: hsl(177, 92%, 70%);
-    --bg-after-btn: hsl(268, 47%, 21%);
-    --bg-btn: hsl(290, 70%, 36%);
-    --btn-color: hsl(52, 100%, 62%);
-    --text-color: hsl(0, 0%, 100%);
-    --output-color: var(--btn-color);
-    --span-color: var(--btn-color)
+  --bg-body: hsl(268, 75%, 9%);
+  --bg-keypad: hsl(268, 71%, 12%);
+  --bg-output: hsl(268, 71%, 12%);
+  --bg-clear-btn: hsl(281, 89%, 26%);
+  --bg-clear-after-btn: hsl(285, 91%, 52%);
+  --bg-submit-btn: hsl(176, 100%, 44%);
+  --bg-submit-after-btn: hsl(177, 92%, 70%);
+  --bg-after-btn: hsl(268, 47%, 21%);
+  --bg-btn: hsl(290, 70%, 36%);
+  --btn-color: hsl(52, 100%, 62%);
+  --text-color: hsl(0, 0%, 100%);
+  --output-color: var(--btn-color);
+  --span-color: var(--btn-color);
 }
